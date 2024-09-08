@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <title></title>
+</head>
+<body>
+    <div class="control-buttons">
+        <p dir="rtl">شرح اللعبة <br> 
+            يظهر لك نوع معين من الكلمات كلاعبين او علماء <br>
+            على حسب عدد الشرط يكون عدد احرف الكلمة <br>
+            عليك بالانتهاء من تجميع الكلمة قبل اكتمال رسمة الرجل المشنوق وعدد الاخطاء يكون 8 اخطاء او انتهاء الوقت <br>
+            العب يا علاوي <br>
+            <i class="fa-solid fa-otter fs-2"></i>
+        </p>
+
+        <span class="btn-primary rounded-pill ">Start Random Game</span>
+        
+        <div class="text-center btns">
+
+        </div>
+    </div>
+    <div class="container">
+        <div class=" d-flex game-info fw-bold">
+            <span id="stop-sound"><i class="fa-solid fa-volume-xmark"></i></span>
+            <div class="game-name text-center">Hangman Game</div>
+            <div id="timer">00:00</div>
+            <div class="category text-end">
+                Word From: <span></span>
+            </div>
+        </div>
+        <hr>
+        <div class="row gap-4 rowe">
+            <div class="hangman">
+                <div class="hangman-draw">
+                    <div class="the-draw">
+                        <div class="the-stand"></div>
+                        <div class="the-hang"></div>
+                        <div class="the-rope"></div>
+                        <div class="the-man">
+                            <div class="head"> <div><i class="fa-solid fa-face-sad-cry"></i></div></div>
+                            <div class="body"></div>
+                            <div class="hands"></div>
+                            <div class="legs"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="letters"></div>
+            <div class="reload text-center fs-1">
+                <div>
+                    <i class="fa-solid fa-rotate-right"></i>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="letters-guess"></div>
+    </div>
+    
+    <audio src="audio/Game Over.mp3" id="over" preload="auto"></audio>
+    <audio src="audio/Start Game.mp3" id="start" preload="auto"></audio>
+    <audio src="audio/right.mp3" id="right" preload="auto"></audio>
+    <audio src="audio/wrong.mp3" id="wrong" preload="auto"></audio>
+    <audio src="audio/win.mp3" id="win" preload="auto"></audio>
+    
+    <script src="js/all.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@latest/dist/confetti.browser.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
